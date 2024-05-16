@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <section class="container">
+        <form class="content">
+            <h1>Inicia Sesión</h1>
+            <div class="login-container">
+                <input id="edtuser" placeholder="Correo electrónico" type="email" required> <br>
+                <input id="edtpassword" placeholder="Contraseña" type="password" required>
+            </div>
+            <button id="loginbtn">Iniciar Sesión</button>
+            <button id="btngoogle"><img src="../Resources/Img/google.png" alt="Google Icon">Google</button>
+            <button id="btnfacebook"><img src="../Resources/Img/faecbook.png" alt="Facebook Icon">Facebook</button>
+
+            <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                    ¿No tienes cuenta? Crea una aquí <a href="../Templates/Register.html">Sign Up</a>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script type="module" src="../Controllers/AuthUser.js"></script>
+    <script type="module" src="../Controllers/Google.js"></script>
+</body>
+</html>

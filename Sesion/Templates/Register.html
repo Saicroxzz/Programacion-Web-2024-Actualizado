@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REgistrarse</title>
+    <link rel="stylesheet" href="/Css/Style_register.css">
+</head>
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>Registro de Usuario</h3>	
+            </div>
+            <div class="card-body">
+                
+                <div class="mb-3">
+                    <br>
+                    <input type="email" class="form-control" id="edtuser" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <br>
+                    <input type="password" class="form-control" id="edtpassword" placeholder="Ingrese clave" minlength="8" required>
+                    <small class="text-danger" id="passwordHelp">La contraseña debe tener al menos 8 caracteres.</small>
+                </div> 
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="confirmEmail" placeholder="Confirmar Email" required>
+                </div>
+                <div class="mb-3">
+                    <br>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme clave" minlength="8" required>
+                </div>
+                <div class="input-group">
+                    <br>
+                    <input type="number" class="form-control" id="id" placeholder="Identificación" required><br>
+                    <br>
+                    <input type="text" class="form-control" id="nameR" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <br>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección" required><br>
+                    <br>
+                    <input type="number" class="form-control" id="telefono" placeholder="Telefono" required>
+                </div>
+    
+                <div>
+                    <label for="fecha">Selecciona su fecha de nacimiento:</label>
+                    <input type="date" id="dateR" name="fecha">
+                </div>
+                <div class="d-grid gap-2">
+                    <input type="submit" id="btnregister" value="Register"  class="btn btn-primary">
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        ¿Ya tienes una cuenta? <a href="../Templates/Registro.html">Iniciar Sesion</a>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="../Controllers/Register.js"></script>
+
+</body>
+</html>

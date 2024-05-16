@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="/Css/Index.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h1>Bienvenido</h1>
+            <p>Por favor, seleccione alguna de las opciones:</p>
+            
+            <!-- Botón para iniciar sesión como usuario -->
+            <button onclick="iniciarSesionUsuario()">Usuario</button>
+
+            <!-- Botón para iniciar sesión como administrador -->
+            <button onclick="iniciarSesionAdministrador()">Administrador</button>
+        </div>
+    </div>
+
+    <script>
+        // Funciones para iniciar sesión
+        function iniciarSesionUsuario() {
+            window.location.href = "../Templates/Registro.html";
+        }
+
+        function iniciarSesionAdministrador() {
+            window.location.href = "../Templates/Sesion_admin.html";
+        }
+    </script>
+    
+</body>
+</html>
